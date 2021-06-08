@@ -52,87 +52,85 @@
 				<!--左邊方框-->
 				<div class="L_box">
 					<div class="L_box_top">
-						<div class="city">台北市</div>
-						<div class="TimeRange">今晚明晨</div>
+						<div class="city" id="L_city">台北市</div>
+						<div class="TimeRange" id="L_TimeRange">今晚明晨</div>
 					</div>
 					<br>
 					<div class="L_box_middle">
 						<div>
-							<p>06/08</p>
-							<p>00:00~06:00</p>
+							<p id="L_date">06/08</p>
+							<p id="L_time">00:00~06:00</p>
 						</div>
 						<div>
-							<img class="WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png">
+							<img class="WeatherPic" id="L_WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png">
 						</div>
 					</div>
-			
+
 					<div class="L_box_bottom">
 						<div class="temp_wrap">
 							<!-- 最高溫~最低溫的文字在JS串起來 -->
 							<p>溫度：</p>
-							<p>25~26</p>
+							<p id="L_temperature">25~26</p>
 						</div>
 						<div class="rain_wrap">
 							<p>降雨機率：</p>
-							<p>10%</p>
+							<p id="L_ranning">10%</p>
 						</div>
-						<div>舒適至悶熱</div>
+						<div id="L_comfort">舒適至悶熱</div>
 					</div>
-			
+
 				</div>
 				<br>
 				<!--中間方框-->
 				<div class="M_box">
 					<div class="M_box_top">
-						<p class="TimeRange">明日白天</p>
+						<p class="TimeRange" id="M_TimeRange">明日白天</p>
 					</div>
 					<div class="M_box_middle">
-						<img class="WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png">
+						<img class="WeatherPic" id="M_WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png">
 					</div>
 					<div  class="M_box_bottom">
 						<div class="temp_wrap">
 							<!-- 最高溫~最低溫的文字在JS串起來 -->
 							<p>溫度：</p>
-							<p>25~26</p>
+							<p id="M_temperature">25~26</p>
 						</div>
 						<div class="rain_wrap">
 							<p>降雨機率：</p>
-							<p>10%</p>
+							<p id="M_ranning">10%</p>
 						</div>
-						<div>舒適至悶熱</div>
+						<div id="M_comfort">舒適至悶熱</div>
 					</div>
 				</div>
 				<br>
 				<!--右邊方框-->
 				<div class="R_box">
 					<div class="R_box_top">
-						<p class="TimeRange">明日晚上</p>
+						<p class="TimeRange" id="R_TimeRange">明日晚上</p>
 					</div>
 					<div class="R_box_middle">
-						<img class="WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png">
+						<img class="WeatherPic" id="R_WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png">
 					</div>
 					<div class="R_box_bottom">
 						<div class="temp_wrap">
 							<!-- 最高溫~最低溫的文字在JS串起來 -->
 							<p>溫度：</p>
-							<p>25~26</p>
+							<p id="R_temperature">25~26</p>
 						</div>
 						<div class="rain_wrap">
 							<p>降雨機率：</p>
-							<p>10%</p>
+							<p id="R_ranning">10%</p>
 						</div>
-						<div>舒適至悶熱</div>
+						<div id="R_comfort">舒適至悶熱</div>
 					</div>
-			
+
 				</div>
-			
+
 			</div>
 
 		</div>
 	</div>
-	
-	<script>
-	</script>
+
 	<!-- 天氣預報JS -->
 	<script src="js/weather.js"></script>
 </body>
