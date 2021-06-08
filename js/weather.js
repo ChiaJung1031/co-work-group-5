@@ -39,7 +39,7 @@ let views = {
 			cityName.innerText = models.ForecastDatabyCounty.records.location[0].locationName;
 			//今天白天 or 今晚明晨
 			let timeRange_start_hour =  parseInt(models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[0].startTime.split(" ")[1].split(":")[0]);
-			if(timeRange_start_hour < 18){
+			if(timeRange_start_hour < 18 && timeRange_start_hour > 6){
 				timeRange.innerText = "今天白天";
 			}else{
 				timeRange.innerText = "今晚明晨";
