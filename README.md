@@ -9,5 +9,3 @@ Lucas: API + JS
 
 
 
-06/08 Jacy ： 新增HTML(下拉選單&天氣預報畫面)
-
