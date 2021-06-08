@@ -1,0 +1,153 @@
+.cnt_top{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    color: #555;
+}
+.cnt_top h3{
+    color: #555;
+}
+.ddl_city select{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 6px;
+    padding-left: 5px;
+    color: #555;
+}
+.cnt_main{
+    background-color: #3c8fd1;
+    height: calc(100vh - 110px);
+}
+.cnt_main h3{
+    opacity: 0;
+    max-width: 1200px;
+    padding: 60px 25px 30px 25px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.weather{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.L_box{
+    width: 60%;
+    max-width: 400px;
+    background-color: #1a67b1;
+    border-radius: 10px;
+    font-size: .875rem;
+    letter-spacing: 1px;
+    padding: 10px 10px 20px 10px;
+}
+.L_box_top{
+    display: flex;
+    margin-top: 15px;
+}
+
+.L_box_top .city{
+    width: 30%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.L_box_top .TimeRange{
+    width: 70%;
+    font-size: .925rem;
+    text-align: center;
+}
+.L_box_middle{
+    display: flex;
+}
+.L_box_middle div:nth-child(1){
+    width: 30%;
+    font-size: .925rem;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 30px;
+}
+.L_box_middle div:nth-child(2){
+    width: 70%;
+    text-align: center;
+}
+.WeatherPic{
+    margin: 20px 0;
+    width: 100px;
+}
+.L_box_bottom{
+    margin-left: 30%;
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.temp_wrap, .rain_wrap{
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 8px;
+}
+.temp_wrap p:nth-child(1), .rain_wrap p:nth-child(1){
+    font-size: .8rem;
+}
+#L_comfort, #M_comfort, #R_comfort{
+    margin-top: 20px;
+}
+.M_box, .R_box{
+    width: calc((40% - 40px) / 2);
+    max-width: 400px;
+    
+    background-color: #1a67b1;
+    border-radius: 10px;
+    font-size: .875rem;
+    letter-spacing: 1px;
+    padding: 10px 10px 20px 10px;
+}
+.M_box{
+    margin-left: 35px;
+    margin-right: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.R_box{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.M_box_top .TimeRange, .R_box .TimeRange{
+    padding-top: 15px;
+    font-size: .925rem;
+    text-align: center;
+}
+.M_box_middle, .R_box_middle{
+    text-align: center;
+}
+.M_box_middle .WeatherPic, .R_box_middle .WeatherPic{
+    min-height: 110px;
+    line-height: 110px;
+}
+.M_box_bottom, .R_box_bottom{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.M_box_bottom .temp_wrap{
+    display: flex; 
+}
+.M_box_bottom .rain_wrap{
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .weather{
+        display: block;
+    }
+    .L_box, .M_box, .R_box{
+        width: 100% ;
+        border-radius: 10px;
+        margin: 10px auto;
+    }
+}
