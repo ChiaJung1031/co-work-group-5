@@ -50,7 +50,16 @@ let views = {
 			let time_start = models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[0].startTime.split(" ")[1].substr(0,5);
 			let time_end = models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[0].endTime.split(" ")[1].substr(0,5);
 			time.innerText = time_start +"~" + time_end;
-			//圖片？？
+      //圖片
+      let picNumber = models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[0].parameter.parameterValue;
+      //day or night
+      let dayNight = "";
+      if(time_start <18){
+        dayNight = "day";
+      }else{
+        dayNight = "night";
+      }
+      weatherPic.src = "img/" + dayNight + "/" + picNumber.toString() + ".svg";
 			//溫度
 			let minTemp = models.ForecastDatabyCounty.records.location[0].weatherElement[2].time[0].parameter.parameterName;
 			let maxTemp = models.ForecastDatabyCounty.records.location[0].weatherElement[4].time[0].parameter.parameterName;
@@ -80,8 +89,17 @@ let views = {
 			}else{
 				timeRange.innerText = "明日白天";
 			}
-			//圖片？？
-			//溫度
+			//圖片
+      let picNumber = models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[1].parameter.parameterValue;
+      //day or night
+      let dayNight = "";
+      if(time_start <18){
+        dayNight = "day";
+      }else{
+        dayNight = "night";
+      }
+      weatherPic.src = "img/" + dayNight + "/" + picNumber.toString() + ".svg";
+      //溫度
 			let minTemp = models.ForecastDatabyCounty.records.location[0].weatherElement[2].time[1].parameter.parameterName;
 			let maxTemp = models.ForecastDatabyCounty.records.location[0].weatherElement[4].time[1].parameter.parameterName;
 			temperature.innerText = minTemp +"° - " + maxTemp + "°";
@@ -109,7 +127,16 @@ let views = {
 			}else{
 				timeRange.innerText = "明日晚上";
 			}
-			//圖片？？
+      //圖片
+      let picNumber = models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[2].parameter.parameterValue;
+      //day or night
+      let dayNight = "";
+      if(time_start <18){
+        dayNight = "day";
+      }else{
+        dayNight = "night";
+      }
+      weatherPic.src = "img/" + dayNight + "/" + picNumber.toString() + ".svg";
 			//溫度
 			let minTemp = models.ForecastDatabyCounty.records.location[0].weatherElement[2].time[2].parameter.parameterName;
 			let maxTemp = models.ForecastDatabyCounty.records.location[0].weatherElement[4].time[2].parameter.parameterName;
