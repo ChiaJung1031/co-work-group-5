@@ -1,0 +1,98 @@
+
+h1.title{
+    font-size: 1.5em;
+    border-bottom: solid;
+    height: 55px;
+}
+.cnt_top{
+    display: flex;
+}
+.ddl_city{
+    margin-top: 28px;
+}
+.weather{
+    display: flex;justify-content: center;
+}
+.L_box{
+    border: 3px;
+    border-style: 
+    dotted;height: 300px;
+    width: 400px;
+    margin-right: 15px;
+}
+.L_box_top{
+    display: flex;
+    margin-top: 15px;
+}
+.L_box_top .city{
+    margin-left:10px;
+}
+.L_box_top .TimeRange{
+    margin-left: 110px;
+}
+.L_box_middle{
+    display: flex;
+}
+.WeatherPic{
+    width: 100px;
+    margin-left: 55px;
+}
+.L_box_bottom{
+    margin-left: 165px;
+}
+.L_box_bottom .temp_wrap{
+    display: flex; 
+    margin-bottom: -30px;
+}
+.L_box_bottom .rain_wrap{
+    display: flex;
+}
+
+.M_box{
+    border: 3px;
+    border-style: dotted;
+    height: 300px;
+    width: 300px;
+    margin-right: 15px;
+}
+.M_box_top .TimeRange{
+    margin-left: 110px;
+}
+.M_box_middle .WeatherPic{
+    width: 100px;
+    margin-left: 55px;
+}
+.M_box_bottom{
+    margin-left: 85px;
+}
+.M_box_bottom .temp_wrap{
+    display: flex; 
+    margin-bottom: -30px;
+}
+.M_box_bottom .rain_wrap{
+    display: flex;
+}
+
+.R_box{
+    border: 3px;
+    border-style: dotted;
+    height: 300px;
+    width: 300px;
+}
+.R_box_top .TimeRange{
+    margin-left: 110px;
+}
+.R_box_middle .WeatherPic{
+    width: 100px;
+    margin-left: 55px;
+}
+.R_box_bottom{
+    margin-left: 85px;
+}
+.R_box_bottom .temp_wrap{
+    display: flex; 
+    margin-bottom: -30px;
+}
+.R_box_bottom .rain_wrap{
+    display: flex;
+}

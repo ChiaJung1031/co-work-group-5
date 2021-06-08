@@ -9,117 +9,128 @@
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
 	<!-- 建立天氣預報部份的樣式 -->
 	<link rel="stylesheet" type="text/css" href="css/weather.css" />
-
-	<div style="border-bottom: solid;height: 55px;">標題~~~~~~~~~~~~</div>
-
-
 </head>
 <body>
-	<div style="display: flex;">
-		<h3>縣市查詢：</h3>
-		<!--下拉選單-->
-		<div id="ddl_city" style="margin-top: 28px;">
-			<select name="city">
-				<option selected id="Taipei">臺北市</option>
-				<option id="NewTaipei">新北市</option>
-				<option id="Taoyuan">桃園市</option>
-				<option id="Taichung">臺中市</option>
-				<option id="Tainan">臺南市</option>
-				<option id="Kaohsiung">高雄市</option>
-				<option id="Hsinchu_S">新竹縣</option>
-				<option id="Miaoli">苗栗縣</option>
-				<option id="Changhua">彰化縣</option>
-				<option id="Nantou">南投縣</option>
-				<option id="Yunlin">雲林縣</option>
-				<option id="Chiayi_S">嘉義縣</option>
-				<option id="Pingtung">屏東縣</option>
-				<option id="Yilan">宜蘭縣</option>
-				<option id="Hualien">花蓮縣</option>
-				<option id="Taitung">臺東縣</option>
-				<option id="Penghu">澎湖縣</option>
-				<option id="Kinmen">金門縣</option>
-				<option id="Lienchiang">連江縣</option>
-				<option id="Keelung">基隆市</option>
-				<option id="Hsinchu">新竹市</option>
-				<option id="Chiayi">嘉義市</option>
-			</select>
-		</div>
-	</div>
+	<header>
+		<h1 class="title">標題~~~~~~~~~~~~</h1>
+	</header>
 
-	<h3>天氣預報</h3>
-	<div id="weather" style="display: flex;justify-content: center; ">
-		<!--左邊方框-->
-		<div id="L_box" style="border: 3px;border-style: dotted;height: 300px;width: 400px;margin-right: 15px;">
-			<div style="display: flex;margin-top: 15px;">
-				<div id="city" style="margin-left:10px;">台北市</div> <div id="TimeRange" style=" margin-left: 110px;">今晚明晨</div>
-			</div>
-			<br>
-			<div style="display: flex;">
-				<div>
-					<p id="date">06/08</p>
-					<p id="time">00:00~06:00</p>
-				</div>
-				<div>
-					<img id="WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png" style="width: 100px;margin-left: 55px;"> 
-				</div>
-			</div>
-
-			<div style="margin-left: 165px;">
-				<div style="display: flex; margin-bottom: -30px;">
-					<!-- 最高溫~最低溫的文字在JS串起來 -->
-					<p>溫度：</p><p id="temperature">25~26</p> 
-				</div>
-				<div style="display: flex;">
-					<p>降雨機率：</p><p id="ranning">10%</p> 
-				</div>
-				<div id="comfort">舒適至悶熱</div>
-			</div>
-
-		</div>
-		<br>
-		<!--中間方框-->
-		<div id="M_box" style="border: 3px;border-style: dotted;height: 300px;width: 300px;margin-right: 15px;">
-			<div>
-				<p id="TimeRange" style=" margin-left: 110px;">明日白天</p>
-		   </div>
-			<div>
-				<img id="WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png" style="width: 100px;margin-left: 55px;"> 
-			</div>
-			<div style="margin-left: 85px;">
-				<div style="display: flex; margin-bottom: -30px;">
-					<!-- 最高溫~最低溫的文字在JS串起來 -->
-					<p>溫度：</p><p id="temperature">25~26</p> 
-				</div>
-				<div style="display: flex;">
-					<p>降雨機率：</p><p id="ranning">10%</p> 
-				</div>
-				<div id="comfort">舒適至悶熱</div>
+	<div class="content">
+		<div class="cnt_top">
+			<h3>縣市查詢：</h3>
+			<!--下拉選單-->
+			<div class="ddl_city">
+				<select name="city">
+					<option selected id="Taipei">臺北市</option>
+					<option id="NewTaipei">新北市</option>
+					<option id="Taoyuan">桃園市</option>
+					<option id="Taichung">臺中市</option>
+					<option id="Tainan">臺南市</option>
+					<option id="Kaohsiung">高雄市</option>
+					<option id="Hsinchu_S">新竹縣</option>
+					<option id="Miaoli">苗栗縣</option>
+					<option id="Changhua">彰化縣</option>
+					<option id="Nantou">南投縣</option>
+					<option id="Yunlin">雲林縣</option>
+					<option id="Chiayi_S">嘉義縣</option>
+					<option id="Pingtung">屏東縣</option>
+					<option id="Yilan">宜蘭縣</option>
+					<option id="Hualien">花蓮縣</option>
+					<option id="Taitung">臺東縣</option>
+					<option id="Penghu">澎湖縣</option>
+					<option id="Kinmen">金門縣</option>
+					<option id="Lienchiang">連江縣</option>
+					<option id="Keelung">基隆市</option>
+					<option id="Hsinchu">新竹市</option>
+					<option id="Chiayi">嘉義市</option>
+				</select>
 			</div>
 		</div>
-		<br>
-		<!--右邊方框-->
-		<div id="R_box" style="border: 3px;border-style: dotted;height: 300px;width: 300px;">
-			<div>
-				 <p id="TimeRange" style=" margin-left: 110px;">明日晚上</p>
-			</div>
-			<div>
-				<img id="WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png" style="width: 100px;margin-left: 55px;"> 
-			</div>
-			<div style="margin-left: 85px;">
-				<div style="display: flex; margin-bottom: -30px;">
-					<!-- 最高溫~最低溫的文字在JS串起來 -->
-					<p>溫度：</p><p id="temperature">25~26</p> 
-				</div>
-				<div style="display: flex;">
-					<p>降雨機率：</p><p id="ranning">10%</p> 
-				</div>
-				<div id="comfort">舒適至悶熱</div>
-			</div>
+		<div class="cnt_main">
+			<h3>天氣預報</h3>
+			<div class="weather">
+				<!--左邊方框-->
+				<div class="L_box">
+					<div class="L_box_top">
+						<div class="city">台北市</div>
+						<div class="TimeRange">今晚明晨</div>
+					</div>
+					<br>
+					<div class="L_box_middle">
+						<div>
+							<p>06/08</p>
+							<p>00:00~06:00</p>
+						</div>
+						<div>
+							<img class="WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png">
+						</div>
+					</div>
 			
-		</div>
-		
-	</div>
+					<div class="L_box_bottom">
+						<div class="temp_wrap">
+							<!-- 最高溫~最低溫的文字在JS串起來 -->
+							<p>溫度：</p>
+							<p>25~26</p>
+						</div>
+						<div class="rain_wrap">
+							<p>降雨機率：</p>
+							<p>10%</p>
+						</div>
+						<div>舒適至悶熱</div>
+					</div>
+			
+				</div>
+				<br>
+				<!--中間方框-->
+				<div class="M_box">
+					<div class="M_box_top">
+						<p class="TimeRange">明日白天</p>
+					</div>
+					<div class="M_box_middle">
+						<img class="WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png">
+					</div>
+					<div  class="M_box_bottom">
+						<div class="temp_wrap">
+							<!-- 最高溫~最低溫的文字在JS串起來 -->
+							<p>溫度：</p>
+							<p>25~26</p>
+						</div>
+						<div class="rain_wrap">
+							<p>降雨機率：</p>
+							<p>10%</p>
+						</div>
+						<div>舒適至悶熱</div>
+					</div>
+				</div>
+				<br>
+				<!--右邊方框-->
+				<div class="R_box">
+					<div class="R_box_top">
+						<p class="TimeRange">明日晚上</p>
+					</div>
+					<div class="R_box_middle">
+						<img class="WeatherPic" src="https://i.ibb.co/yhdy9p4/Chimmy.png">
+					</div>
+					<div class="R_box_bottom">
+						<div class="temp_wrap">
+							<!-- 最高溫~最低溫的文字在JS串起來 -->
+							<p>溫度：</p>
+							<p>25~26</p>
+						</div>
+						<div class="rain_wrap">
+							<p>降雨機率：</p>
+							<p>10%</p>
+						</div>
+						<div>舒適至悶熱</div>
+					</div>
+			
+				</div>
+			
+			</div>
 
+		</div>
+	</div>
+	
 	<script>
 	</script>
 	<!-- 天氣預報JS -->
