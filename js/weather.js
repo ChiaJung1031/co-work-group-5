@@ -92,6 +92,8 @@ let views = {
 			//圖片
       let picNumber = models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[1].parameter.parameterValue;
       //day or night
+      //時間
+			let time_start = models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[1].startTime.split(" ")[1].substr(0,5);
       let dayNight = "";
       if(time_start <18){
         dayNight = "day";
@@ -130,6 +132,8 @@ let views = {
       //圖片
       let picNumber = models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[2].parameter.parameterValue;
       //day or night
+      //時間
+			let time_start = models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[2].startTime.split(" ")[1].substr(0,5);
       let dayNight = "";
       if(time_start <18){
         dayNight = "day";
