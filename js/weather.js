@@ -41,7 +41,7 @@ let views = {
 			let timeRange_start_hour =  parseInt(models.ForecastDatabyCounty.records.location[0].weatherElement[0].time[0].startTime.split(" ")[1].split(":")[0]);
 			if(timeRange_start_hour == 0){
 				timeRange.innerText = "今晚明晨";
-			}else if (timeRange_start_hour == 6) {
+			}else if (timeRange_start_hour == 6 || timeRange_start_hour == 12) {
         timeRange.innerText = "今日白天";
       }
       else{
